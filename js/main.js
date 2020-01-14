@@ -35,6 +35,10 @@ var vm = new Vue({
 
     setUserPrefs() {
       console.log('set user prefs via routing and probably a component');
+    },
+
+    loadMovie(movie) {
+      console.log('show movie details');
     }
   }
 });

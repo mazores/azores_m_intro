@@ -45,8 +45,9 @@
     </header>
 
     <ul class="video-poster-wrapper">
-      <li>
-        <a></a>
+      <li v-for="movie in videodata">
+        <a :href="movie.vidsource" v-on:click.prevent="loadMovie(movie)"></a>
+        <img :src="'images/' + movie.thumb" alt="movie poster">
       </li>
     </ul>
 
