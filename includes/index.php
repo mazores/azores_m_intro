@@ -1,5 +1,5 @@
 <?php
-    reuire('functions.php');
+    require('functions.php');
 
     if (isset($_GET['user'])) {
         $user = getUser($pdo);
